@@ -46,6 +46,25 @@ const frameIn = [
         name: 'redirect',
         hidden: true,
         component: _import('system/function/redirect')
+      },
+      // 账户
+      {
+        path: '/account',
+        name: 'account',
+        meta: {
+          title: '账户',
+          auth: true
+        },
+        component: _import('account/account')
+      },
+      {
+        path: '/company',
+        name: 'company',
+        meta: {
+          title: '企业',
+          auth: true
+        },
+        component: _import('company/company')
       }
     ]
   },
